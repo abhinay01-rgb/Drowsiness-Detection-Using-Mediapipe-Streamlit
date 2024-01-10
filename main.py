@@ -82,6 +82,6 @@ with col1:
         video_html_attrs=VideoHTMLAttributes(autoPlay=True, controls=False, muted=False),
     )
 
-with col2:
-    # Banner for newsletter subscription, jobs, and consulting.
-    st.markdown(css_string, unsafe_allow_html=True)
+# with col2:
+#     # Banner for newsletter subscription, jobs, and consulting.
+#     st.markdown(css_string, unsafe_allow_html=True)
