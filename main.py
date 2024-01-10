@@ -7,26 +7,9 @@ from streamlit_webrtc import VideoHTMLAttributes, webrtc_streamer
 
 from audio_handling import AudioFrameHandler
 from drowsy_detection import VideoFrameHandler
-
-
-
 # Define the audio file to use.
 alarm_file_path = os.path.join("audio", "wake_up.wav")
-
-# # Streamlit Components
-# st.set_page_config(
-#     page_title="Drowsiness Detection | LearnOpenCV",
-#     page_icon="https://learnopencv.com/wp-content/uploads/2017/12/favicon.png",
-#     layout="wide",  # centered, wide
-#     initial_sidebar_state="expanded",
-#     menu_items={
-#         "About": "### Visit www.learnopencv.com for more exciting tutorials!!!",
-#     },
-# )
-
-
 col1, col2 = st.columns(spec=[6, 2], gap="medium")
-
 with col1:
     st.title("Drowsiness Detection iHub IIT Mandi")
     with st.container():
@@ -82,6 +65,4 @@ with col1:
         video_html_attrs=VideoHTMLAttributes(autoPlay=True, controls=False, muted=False),
     )
 
-# with col2:
-#     # Banner for newsletter subscription, jobs, and consulting.
-#     st.markdown(css_string, unsafe_allow_html=True)
+
